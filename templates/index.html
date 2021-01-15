@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1><b>Welcome To The Elite Gaming Foundation</b><h1>
+    
+   
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2><b>Discord</b></h2>
+        <p>
+
+        </p>
+        <p><a class="btn btn-default" href="http://discord.gg/tegf">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2><b>Staff</b></h2>
+        <p>.</p>
+        <p><a class="btn btn-default" href="{{url_for('about')}}">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2><b>Want To Apply </b></h2>
+        <p>You Can Apply hear or click hear for ban-mute appeal.</p>
+        <p><a class="btn btn-default" href="{{ url_for('contact') }}">Learn more &raquo;</a></p>
+    </div>
+    
+</div>
+<iframe src="https://discordapp.com/widget?id=729810677195079700&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+{% endblock %}
